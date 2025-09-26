@@ -1,0 +1,16 @@
+.cartwidget {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.cartwidget .cart-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.cart-count {
+    font-size: 0.7em;
+        margin-left: 2px;
+        align-self: flex-start;
+        margin-top: 2px;
+}
