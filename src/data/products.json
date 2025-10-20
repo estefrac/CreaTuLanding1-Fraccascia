@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "nombre": "Sticker Boca Juniors",
+    "categoria": "Deportes",
+    "descripcion": "Escudo de Boca Juniors resistente al agua.",
+    "precio": 500,
+    "imagen": "/images/boca.png"
+  },
+  {
+    "id": 2,
+    "nombre": "Sticker River Plate",
+    "categoria": "Deportes",
+    "descripcion": "Escudo de River Plate resistente al agua.",
+    "precio": 500,
+    "imagen": "/images/river.png"
+  },
+  {
+    "id": 3,
+    "nombre": "Sticker Selección Argentina",
+    "categoria": "Deportes",
+    "descripcion": "Escudo de la Selección Argentina de fútbol.",
+    "precio": 550,
+    "imagen": "/images/argentina.png"
+  },
+  {
+    "id": 4,
+    "nombre": "Sticker Chicago Bulls",
+    "categoria": "Básquet",
+    "descripcion": "Clásico logo de los Chicago Bulls.",
+    "precio": 600,
+    "imagen": "/images/bulls.png"
+  },
+  {
+    "id": 5,
+    "nombre": "Sticker Lakers",
+    "categoria": "Básquet",
+    "descripcion": "Logo de Los Angeles Lakers.",
+    "precio": 600,
+    "imagen": "/images/lakers.png"
+  },
+  {
+    "id": 6,
+    "nombre": "Sticker Mate Argentino",
+    "categoria": "Cultura",
+    "descripcion": "Un clásico mate con bombilla.",
+    "precio": 400,
+    "imagen": "/images/mate.png"
+  },
+  {
+    "id": 7,
+    "nombre": "Sticker Asado",
+    "categoria": "Cultura",
+    "descripcion": "Diseño divertido de un asado argentino.",
+    "precio": 450,
+    "imagen": "/images/asado.png"
+  },
+  {
+    "id": 8,
+    "nombre": "Sticker Qué mirás bobo",
+    "categoria": "Frases",
+    "descripcion": "Frase célebre de Messi en Qatar 2022.",
+    "precio": 500,
+    "imagen": "/images/quemirasbobo.png"
+  },
+  {
+    "id": 9,
+    "nombre": "Sticker Stay Cool",
+    "categoria": "Frases",
+    "descripcion": "Diseño minimalista con la frase Stay Cool.",
+    "precio": 400,
+    "imagen": "/images/staycool.png"
+  },
+  {
+    "id": 10,
+    "nombre": "Sticker Gameboy",
+    "categoria": "Geek",
+    "descripcion": "Diseño retro de una consola portátil.",
+    "precio": 600,
+    "imagen": "/images/gameboy.png"
+  },
+  {
+    "id": 11,
+    "nombre": "Sticker Joystick Gamer",
+    "categoria": "Geek",
+    "descripcion": "Clásico joystick gamer estilo retro.",
+    "precio": 550,
+    "imagen": "/images/joystick.png"
+  },
+  {
+    "id": 12,
+    "nombre": "Sticker Cactus Minimalista",
+    "categoria": "Naturaleza",
+    "descripcion": "Sticker de cactus en estilo dibujo.",
+    "precio": 450,
+    "imagen": "/images/cactus.png"
+  }
+]
