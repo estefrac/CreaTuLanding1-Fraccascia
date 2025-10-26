@@ -1,0 +1,36 @@
+.error404-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  color: #18181B;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+.error404-title {
+  font-size: 4rem;
+  margin-bottom: 0.5em;
+}
+
+.error404-message {
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+.error404-btn {
+  background: linear-gradient(45deg, #3B3486, #585392);
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 3px 10px rgba(0,0,0,.1);
+  transition: .3s;
+}
+
+.error404-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,.15);
+}
