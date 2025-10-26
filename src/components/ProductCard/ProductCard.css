@@ -54,6 +54,7 @@
     color: #18181B;
     margin: 0 0 10px;
     letter-spacing: -.5px;
+    text-align: left;
 }
 
 .desc {
@@ -104,7 +105,7 @@
 }
 
 .btn {
-    background: linear-gradient(45deg, #18181B, #27272A);
+    background: linear-gradient(45deg, #3B3486, #7872b8);
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -119,10 +120,11 @@
     box-shadow: 0 3px 10px rgba(0, 0, 0, .1);
     position: relative;
     overflow: hidden;
+    text-decoration: none;
 }
 
 .btn:hover {
-    background: linear-gradient(45deg, #27272A, #3F3F46);
+    background: linear-gradient(45deg, #3B3486, #7872b8);
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
 }
@@ -140,6 +142,11 @@
 
 .btn:hover:before {
     left: 100%;
+}
+
+.btn-card {
+    display: flex;
+    gap: 10px;
 }
 
 .icon {

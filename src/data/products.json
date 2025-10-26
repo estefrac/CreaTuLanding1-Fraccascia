@@ -4,95 +4,119 @@
     "nombre": "Sticker Boca Juniors",
     "categoria": "Deportes",
     "descripcion": "Escudo de Boca Juniors resistente al agua.",
+    "descripcion_larga": "Sticker premium del escudo oficial de Boca Juniors, impreso en vinilo brillante de alta calidad. Resistente al agua, al sol y al desgaste. Ideal para termos, notebooks, cascos o autos. Tamaño aproximado 7x7 cm.",
     "precio": 500,
-    "imagen": "/images/boca.png"
+    "imagen": "/img/escudo-de-boca.png",
+    "stock": 35
   },
   {
     "id": 2,
     "nombre": "Sticker River Plate",
     "categoria": "Deportes",
     "descripcion": "Escudo de River Plate resistente al agua.",
+    "descripcion_larga": "Vinilo decorativo del escudo de River Plate, con impresión de alta definición y acabado mate. Perfecto para superficies lisas como vidrios, metales o plásticos. No deja residuos al retirarse.",
     "precio": 500,
-    "imagen": "/images/river.png"
+    "imagen": "/img/escudo-de-river-plate.png",
+    "stock": 30
   },
   {
     "id": 3,
     "nombre": "Sticker Selección Argentina",
     "categoria": "Deportes",
     "descripcion": "Escudo de la Selección Argentina de fútbol.",
+    "descripcion_larga": "Sticker del escudo de la Selección Argentina de fútbol, símbolo del tricampeón del mundo. Fabricado en vinilo resistente al agua, con colores vibrantes y gran durabilidad. Ideal para los fanáticos del fútbol nacional.",
     "precio": 550,
-    "imagen": "/images/argentina.png"
+    "imagen": "/img/escudo-afa.png",
+    "stock": 40
   },
   {
     "id": 4,
     "nombre": "Sticker Chicago Bulls",
-    "categoria": "Básquet",
+    "categoria": "Deportes",
     "descripcion": "Clásico logo de los Chicago Bulls.",
+    "descripcion_larga": "Sticker con el icónico logo de los Chicago Bulls, uno de los equipos más legendarios de la NBA. Diseño detallado y resistente, perfecto para coleccionistas o amantes del básquet. Tamaño 8x6 cm.",
     "precio": 600,
-    "imagen": "/images/bulls.png"
+    "imagen": "/img/escudo-bulls.png",
+    "stock": 25
   },
   {
     "id": 5,
     "nombre": "Sticker Lakers",
-    "categoria": "Básquet",
+    "categoria": "Deportes",
     "descripcion": "Logo de Los Angeles Lakers.",
+    "descripcion_larga": "Sticker del logo de Los Angeles Lakers, impreso en vinilo duradero y brillante. Perfecto para personalizar tus objetos con estilo NBA. Resiste al agua y al calor.",
     "precio": 600,
-    "imagen": "/images/lakers.png"
+    "imagen": "/img/escudo_lakers.png",
+    "stock": 28
   },
   {
     "id": 6,
     "nombre": "Sticker Mate Argentino",
     "categoria": "Cultura",
     "descripcion": "Un clásico mate con bombilla.",
+    "descripcion_larga": "Diseño artístico del tradicional mate argentino. Ideal para representar la cultura nacional. Material vinílico resistente, fácil de aplicar y limpiar. Medidas aproximadas: 6x6 cm.",
     "precio": 400,
-    "imagen": "/images/mate.png"
+    "imagen": "/img/mate-argentino.png",
+    "stock": 50
   },
   {
     "id": 7,
-    "nombre": "Sticker Asado",
+    "nombre": "Sticker Fernet con Coca",
     "categoria": "Cultura",
-    "descripcion": "Diseño divertido de un asado argentino.",
+    "descripcion": "Diseño clásico del infaltable Fernet con Coca.",
+    "descripcion_larga": "Sticker inspirado en la icónica bebida argentina: el Fernet con Coca. Ideal para fanáticos de esta tradición nacional. Impreso con materiales de alta calidad, resistente al agua y al sol. Perfecto para decorar botellas, notebooks o heladeras.",
     "precio": 450,
-    "imagen": "/images/asado.png"
+    "imagen": "/img/fernet-con-coca.png",
+    "stock": 45
   },
   {
     "id": 8,
     "nombre": "Sticker Qué mirás bobo",
     "categoria": "Frases",
     "descripcion": "Frase célebre de Messi en Qatar 2022.",
+    "descripcion_larga": "Sticker con la icónica frase de Lionel Messi en el Mundial de Qatar 2022. Ideal para los amantes del fútbol y el humor argentino. Vinilo autoadhesivo con acabado brillante.",
     "precio": 500,
-    "imagen": "/images/quemirasbobo.png"
+    "imagen": "/img/que-miras-bobo.png",
+    "stock": 60
   },
   {
     "id": 9,
     "nombre": "Sticker Stay Cool",
     "categoria": "Frases",
     "descripcion": "Diseño minimalista con la frase Stay Cool.",
+    "descripcion_larga": "Sticker moderno y minimalista con la frase motivacional 'Stay Cool'. Ideal para laptops, notebooks o termos. Diseño limpio y elegante con acabado mate.",
     "precio": 400,
-    "imagen": "/images/staycool.png"
+    "imagen": "/img/stay-cool.png",
+    "stock": 55
   },
   {
     "id": 10,
     "nombre": "Sticker Gameboy",
     "categoria": "Geek",
     "descripcion": "Diseño retro de una consola portátil.",
+    "descripcion_larga": "Sticker inspirado en la clásica consola Gameboy, ícono de los videojuegos de los 90. Hecho en vinilo premium con detalles precisos y acabado brillante. Perfecto para coleccionistas y gamers nostálgicos.",
     "precio": 600,
-    "imagen": "/images/gameboy.png"
+    "imagen": "/img/gameboy.png",
+    "stock": 32
   },
   {
     "id": 11,
     "nombre": "Sticker Joystick Gamer",
     "categoria": "Geek",
     "descripcion": "Clásico joystick gamer estilo retro.",
+    "descripcion_larga": "Sticker con diseño de joystick clásico, ideal para los amantes de los videojuegos retro. Vinilo de alta calidad con colores intensos, resistente a rayaduras y agua.",
     "precio": 550,
-    "imagen": "/images/joystick.png"
+    "imagen": "/img/game-joystick.png",
+    "stock": 38
   },
   {
     "id": 12,
     "nombre": "Sticker Cactus Minimalista",
     "categoria": "Naturaleza",
     "descripcion": "Sticker de cactus en estilo dibujo.",
+    "descripcion_larga": "Sticker decorativo con diseño minimalista de cactus, ideal para quienes aman la naturaleza y la estética simple. Impreso en vinilo mate, resistente al agua y fácil de colocar.",
     "precio": 450,
-    "imagen": "/images/cactus.png"
+    "imagen": "/img/cactus.png",
+    "stock": 42
   }
 ]

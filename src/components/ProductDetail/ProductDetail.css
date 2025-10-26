@@ -1,0 +1,254 @@
+.product-container {
+    min-height: 100vh;
+    background-color: #fafafa;
+    padding: 2rem 1rem;
+}
+
+.product-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+@media (min-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product-container {
+        padding: 2rem;
+    }
+}
+
+.product-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.product-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.product-image:hover {
+    transform: scale(1.05);
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 0.75rem;
+    line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+    .product-title {
+        font-size: 2.5rem;
+    }
+}
+
+.product-short-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.product-stock {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    color: #1a1a1a;
+}
+
+.stock-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #3B3486;
+}
+
+.stock-amount {
+    color: #3B3486;
+}
+
+.product-price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+}
+
+.quantity-section {
+    margin-bottom: 1.5rem;
+}
+
+.quantity-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.quantity-button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #d1d5db;
+    background: white;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.quantity-button:hover:not(:disabled) {
+    background-color: #f3f4f6;
+}
+
+.quantity-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.quantity-button svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+.quantity-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 40px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background: white;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.product-detail-btn {
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.product-detail-btn-primary {
+    background-color: #3B3486;
+    color: white;
+}
+
+.product-detail-btn-primary:hover {
+    background-color: #28235a;
+}
+
+.product-detail-btn-secondary {
+    background-color: white;
+    color: #1a1a1a;
+    border: 1px solid #d1d5db;
+}
+
+.product-detail-btn-secondary:hover {
+    background-color: #f3f4f6;
+}
+
+.product-detail-btn-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.description-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-top: 1.5rem;
+}
+
+.description-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.description-content {
+    color: #1a1a1a;
+    line-height: 1.7;
+}
+
+.description-content p {
+    margin-bottom: 1rem;
+}
+
+.description-content strong {
+    font-weight: 600;
+}
+
+.description-content ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.description-content ul li {
+    margin-bottom: 0.5rem;
+}
+
+.description-content .features-title {
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
