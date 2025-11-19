@@ -3,7 +3,7 @@ import { addDoc, collection } from "firebase/firestore";
 
 import { CartContext } from "../../context/CartContext";
 import db from "../../db/db";
-import FormCheckout from "../formCheckout/formCheckout.jsx";
+import FormCheckout from "../FormCheckout/FormCheckout.jsx";
 
 import "./Checkout.css";
 
