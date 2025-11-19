@@ -265,7 +265,7 @@ npm run dev
 
 ## 👨‍💻 Autor
 
-**Estefanía Fraccascia**
+**Esteban Fraccascia**
 
 - Proyecto final - CoderHouse React JS
 - Comisión: 88020
