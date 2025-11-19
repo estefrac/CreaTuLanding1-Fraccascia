@@ -27,7 +27,6 @@ const ProductCard = ({ product }) => {
           </div>
           <div className="btn-card">
             <Link to={`/detail/${product.id}`} className="btn"><span>Ver más</span></Link>
-            <Link className="btn"><span>Comprar</span></Link>
           </div>
         </div>
       </div>

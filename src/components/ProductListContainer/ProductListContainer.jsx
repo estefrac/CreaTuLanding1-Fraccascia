@@ -1,9 +1,12 @@
 import { useState, useEffect } from "react"
-import ProductList from "../ProductList/ProductList.jsx"
-import "./ProductListContainer.css"
-import getProducts from "../../data/products.js"
 import { useParams } from "react-router-dom";
 import PulseLoader from "react-spinners/PulseLoader";
+import { collection, getDocs, query, where } from "firebase/firestore";
+
+import ProductList from "../ProductList/ProductList.jsx"
+import db from "../../db/db.js";
+
+import "./ProductListContainer.css"
 
 const ProductListContainer = ({ greeting }) => {
 
@@ -11,25 +14,38 @@ const ProductListContainer = ({ greeting }) => {
   const [loading, setLoading] = useState(true);
   const { categoria } = useParams();
 
-
-  useEffect(() => {
-
+  useEffect(()=>{
     setLoading(true);
+    
+    const productsRef = collection(db, "products");
 
-    getProducts()
-      .then((data) => {
-        if (categoria) {
-          const productsFiltered = data.filter(product => product.categoria === categoria);
-          setProducts(productsFiltered);
+    const getData = async() => {
+      try {
+        if(categoria){
+          const q = query(productsRef, where("categoria", "==", categoria));
+          const dataDb = await getDocs(q);
+          const data = dataDb.docs.map((productDb)=>{
+            return {id: productDb.id, ...productDb.data()}
+          })
+          setProducts(data);
         } else {
-            setProducts(data);
+          const dataDb = await getDocs(productsRef);
+          const data = dataDb.docs.map((productDb)=>{
+            return {id: productDb.id, ...productDb.data()}
+          })
+          setProducts(data);
         }
-      })
-      .finally(() => {
+      } catch (error) {
+        console.error("Error al obtener los productos: ", error);
+      } finally {
         setLoading(false);
-      });
-      
-  }, [categoria]);
+      }
+    }
+
+    getData();
+  }, [categoria])
+
+
 
   return (
     <div className="container">

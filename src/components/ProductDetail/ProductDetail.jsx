@@ -1,9 +1,29 @@
 import { useState } from "react";
-import { ShoppingCart, Minus, Plus, Package } from "lucide-react";
+import { Package } from "lucide-react";
+import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
+
+import ProductCount from "../ProductCount/ProductCount.jsx";
+import { CartContext } from "../../context/CartContext.jsx";
+
 import "./ProductDetail.css";
 
 
 const ProductDetail = ({product}) => {
+
+  const{ addProduct } = useContext(CartContext);
+  const navigate = useNavigate();
+
+  const addToCart = (count) => {
+    const newProduct = {...product, quantity: count};
+    addProduct(newProduct)
+  }
+
+  const buyNow = (count) => {
+    const newProduct = {...product, quantity: count};
+    addProduct(newProduct);
+    navigate("/checkout");
+  }
 
     const defaultImg = "/img/card-default.png";
     const [imgSrc, setImgSrc] = useState(product.imagen || defaultImg);
@@ -38,35 +58,11 @@ const ProductDetail = ({product}) => {
                   </span>
                 </div>
 
-                <div className="product-price">{product.price}</div>
-
-                <div className="quantity-section">
-                  <label className="quantity-label">
-                    Cantidad
-                  </label>
-                  <div className="quantity-controls">
-                    <button className="quantity-button">
-                      <Minus />
-                    </button>
-                    <span className="quantity-display">
-                      1
-                    </span>
-                    <button className="quantity-button">
-                      <Plus />
-                    </button>
-                  </div>
-                </div>
+                <div className="product-price">{product.precio}</div>
+                <ProductCount stock={product.stock} addToCart={addToCart} buyNow={buyNow}/>
               </div>
 
-              <div className="action-buttons">
-                <button className="product-detail-btn product-detail-btn-primary">
-                  Comprar ahora
-                </button>
-                <button className="product-detail-btn product-detail-btn-secondary">
-                  <ShoppingCart className="product-detail-btn-icon" />
-                  Agregar al carrito
-                </button>
-              </div>
+              
             </div>
           </div>
         </div>
