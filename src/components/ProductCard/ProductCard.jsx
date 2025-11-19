@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 import "./ProductCard.css";
 
 const ProductCard = ({ product }) => {
@@ -14,7 +15,7 @@ const ProductCard = ({ product }) => {
     <div className="card">
       <div className="tilt">
         <div className="img">
-          <img src={imgSrc} alt={product.nombre} onError={handleError} /> 
+          <img src={imgSrc} alt={product.nombre} onError={handleError} />
         </div>
       </div>
       <div className="info">
@@ -32,6 +33,17 @@ const ProductCard = ({ product }) => {
       </div>
     </div>
   );
+};
+
+ProductCard.propTypes = {
+  product: PropTypes.shape({
+    imagen: PropTypes.string,
+    nombre: PropTypes.string.isRequired,
+    categoria: PropTypes.string.isRequired,
+    descripcion: PropTypes.string.isRequired,
+    precio: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default ProductCard;

@@ -1,9 +1,10 @@
-import {createContext, useState, useEffect} from "react";
+import { createContext, useState, useEffect } from "react";
+import { toast } from "sonner";
 
 // Creamos el contexto del carrito de compras
 const CartContext = createContext();
 
-const CartProvider = ({children})=>{
+const CartProvider = ({ children }) => {
     const cartLocalStorage = JSON.parse(localStorage.getItem('cart'));
     const [cart, setCart] = useState(cartLocalStorage ? cartLocalStorage : []);
 
@@ -13,16 +14,18 @@ const CartProvider = ({children})=>{
 
     const addProduct = (newProduct) => {
         const existingProduct = cart.find(productCart => productCart.id === newProduct.id);
-        
+
         if (existingProduct) {
-            const updatedCart = cart.map(productCart => 
-                productCart.id === newProduct.id 
+            const updatedCart = cart.map(productCart =>
+                productCart.id === newProduct.id
                     ? { ...productCart, quantity: productCart.quantity + newProduct.quantity }
                     : productCart
             );
             setCart(updatedCart);
+            toast.success("Cantidad actualizada en el carrito");
         } else {
-            setCart([ ...cart, newProduct ]);
+            setCart([...cart, newProduct]);
+            toast.success("Producto agregado al carrito");
         }
     }
 
@@ -39,17 +42,19 @@ const CartProvider = ({children})=>{
     const deleteProductById = (id) => {
         const updatedCart = cart.filter(productCart => productCart.id !== id);
         setCart(updatedCart);
+        toast.info("Producto eliminado del carrito");
     }
 
     const clearCart = () => {
         setCart([]);
+        toast.info("Carrito vaciado");
     }
 
     return (
-        <CartContext.Provider value={{cart, addProduct, totalQuantity, totalPrice, deleteProductById, clearCart}}>
+        <CartContext.Provider value={{ cart, addProduct, totalQuantity, totalPrice, deleteProductById, clearCart }}>
             {children}
         </CartContext.Provider>
     )
 };
 
-export {CartContext, CartProvider};
+export { CartContext, CartProvider };
