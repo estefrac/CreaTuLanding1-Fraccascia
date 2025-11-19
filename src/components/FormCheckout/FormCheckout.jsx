@@ -1,4 +1,4 @@
-import "./formCheckout.css";
+import "./FormCheckout.css";
 
 const FormCheckout = ({ dataForm, handleInputChange, sendOrder }) => {
   return (
